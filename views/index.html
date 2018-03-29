@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="./libraries/css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--webfonts-->
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+	<script src="./libraries/js/angular.js"></script>
+	<script src="./libraries/js/angular-cookies.js"></script>
+	<script src="./libraries/lib/notification.js"></script>
+	<script src="./libraries/lib/angular-ui-notification.js"></script>
+	<script src="./angular/config.js"></script>
+	<!--//webfonts-->
+</head>
+
+<body ng-app="adminloginApp" ng-controller="AdminLoginController">
+	<div class="main">
+		<div class="social-icons">
+			<div class="col_1_of_f span_1_of_f">
+				<a href="#">
+					<ul class='facebook'>
+						<i class="fb"> </i>
+						<li>Connect with Facebook</li>
+						<div class='clear'> </div>
+					</ul>
+				</a>
+			</div>
+			<div class="col_1_of_f span_1_of_f">
+				<a href="#">
+					<ul class='twitter'>
+						<i class="tw"> </i>
+						<li>Connect with Google</li>
+						<div class='clear'> </div>
+					</ul>
+				</a>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		<h2>Or Signup with</h2>
+		<form>
+			<div class="lable">
+				<div class="col_1_of_2 span_1_of_2">
+					<input type="text" class="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"
+					    id="active" ng-model="user.name">
+				</div>
+				<div class="col_1_of_2 span_1_of_2">
+					<input type="text" class="text" value="Phone Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone Number';}" ng-model="user.phone">
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<div class="lable-2">
+				<input type="text" class="text" value="your@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}" ng-model="user.emailId">
+				<input type="password" class="text" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}" ng-model="user.password">
+			</div>
+			<div class="submit">
+				<input type="submit" data-ng-click="addUser()" value="Create account">
+			</div>
+			<div class="clear"> </div>
+		</form>
+		<!-----//end-main---->
+	</div>
+	<!-----start-copyright---->
+
+</body>
+
+<script src="./angular/adminangu.js"></script>
+
+</html>
